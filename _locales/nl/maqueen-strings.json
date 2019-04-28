@@ -1,5 +1,4 @@
-{
-    "maqueen.aMotors.M1|block": "M1",
+{   "maqueen.aMotors.M1|block": "M1",
     "maqueen.aMotors.M2|block": "M2",
     "maqueen.Patrol.PatrolLeft|block": "RouteLinks",
     "maqueen.Patrol.PatrolRight|block": "RouteRechts",

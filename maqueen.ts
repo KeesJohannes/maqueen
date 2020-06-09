@@ -94,6 +94,19 @@ namespace maqueen{
             maqueencb(packet)
         });
     }
+  
+    //% weight=63
+    //% blockGap=50
+    //% mutate=objectdestructuring
+    //% mutateText=myparam
+    //% blockId=IR_cbU block="on obloq received tekst"
+    export function IR_cbU(maqueencb: (code: string) => void) {
+        maqueenInit()
+        IR_callback(() => {
+            maqueencb(maqueene)
+        });
+    }
+
     
     //% weight=10
     //% blockId=IR_read block="read IR"

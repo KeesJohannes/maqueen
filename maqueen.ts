@@ -97,10 +97,7 @@ namespace maqueen{
   
     //% weight=63
     //% blockGap=50
-    //% mutate=objectdestructuring
-    //% mutateText=myparam
-    //% mutateDefaults="myparam;myparam:message"
-    //% blockId=IR_cbU block="on obloq received tekst"
+    //% blockId=IR_cbU block="on obloq received $code"
     export function IR_cbU(maqueencb: (code: string) => void) {
         maqueenInit()
         IR_callback(() => {

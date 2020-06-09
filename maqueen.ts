@@ -102,7 +102,8 @@ namespace maqueen{
     export function IR_cbU(maqueencb: (code: string) => void) {
         maqueenInit()
         IR_callback(() => {
-            maqueencb(maqueene)
+            code = maqueene
+            maqueencb(code)
         });
     }
 

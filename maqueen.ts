@@ -98,6 +98,7 @@ namespace maqueen{
     //% weight=63
     //% blockGap=50
     //% blockId=IR_cbU block="on obloq received $code"
+    //% draggableParameters
     export function IR_cbU(maqueencb: (code: string) => void) {
         maqueenInit()
         IR_callback(() => {

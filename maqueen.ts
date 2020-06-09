@@ -99,10 +99,10 @@ namespace maqueen{
     //% blockGap=50
     //% blockId=IR_cbU block="on obloq received $code"
     //% draggableParameters="reporter"
-    export function IR_cbU(maqueencb: (code: string) => void) {
+    export function IR_cbU(maqueencb: (code: number) => void) {
         maqueenInit()
         IR_callback(() => {
-            const code = maqueene
+            const code = getParam();
             maqueencb(code)
         });
     }

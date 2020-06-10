@@ -98,7 +98,9 @@ namespace maqueen{
     //% weight=63
     //% blockGap=50
     //% mutateText=number
-    //% blockId=IR_cbU block="on obloq received"
+    //% blockId=IR_cbU block="on obloq received | $code"
+    //% code.shadow="myShadowBlockID"
+    //% blockSetVariable=code
     //% draggableParameters="reporter"
     export function IR_cbU(maqueencb: (code: number) => void) {
         maqueenInit()
